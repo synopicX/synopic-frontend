@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgba(244, 244, 244, 1);
+  --foreground: rgba(51, 51, 51, 1);
+  --card: rgba(255, 255, 255, 1);
+  --card-foreground: rgba(51, 51, 51, 1);
+  --popover: rgba(255, 255, 255, 1);
+  --popover-foreground: rgba(51, 51, 51, 1);
+  --primary: rgba(34, 34, 34, 1);
+  --primary-foreground: rgba(250, 250, 250, 1);
+  --secondary: rgba(230, 230, 230, 1);
+  --secondary-foreground: rgba(34, 34, 34, 1);
+  --muted: rgba(230, 230, 230, 1);
+  --muted-foreground: rgba(115, 115, 115, 1);
+  --accent: rgba(230, 230, 230, 1);
+  --accent-foreground: rgba(34, 34, 34, 1);
+  --destructive: rgba(217, 40, 40, 1);
+  --destructive-foreground: rgba(250, 250, 250, 1);
+  --border: rgba(229, 229, 229, 1);
+  --input: rgba(229, 229, 229, 1);
+  --ring: rgba(10, 10, 10, 1);
+  --chart-1: rgba(186, 204, 121, 1);
+  --chart-2: rgba(35, 142, 122, 1);
+  --chart-3: rgba(74, 98, 74, 1);
+  --chart-4: rgba(189, 213, 95, 1);
+  --chart-5: rgba(201, 215, 100, 1);
+  --radius: 0.5rem;
+
+  --sidebar-background: rgba(250, 250, 250, 1);
+  --sidebar-foreground: rgba(59, 61, 66, 1);
+  --sidebar-primary: rgba(60, 61, 64, 1);
+  --sidebar-primary-foreground: rgba(250, 250, 250, 1);
+  --sidebar-accent: rgba(245, 245, 245, 1);
+  --sidebar-accent-foreground: rgba(60, 61, 64, 1);
+  --sidebar-border: rgba(230, 230, 230, 1);
+  --sidebar-ring: rgba(174, 227, 183, 1);
+}
+
+.dark {
+  --background: rgba(25, 26, 28, 1);
+  --foreground: rgba(250, 250, 250, 1);
+  --card: rgba(10, 10, 10, 1);
+  --card-foreground: rgba(250, 250, 250, 1);
+  --popover: rgba(10, 10, 10, 1);
+  --popover-foreground: rgba(250, 250, 250, 1);
+  --primary: rgba(250, 250, 250, 1);
+  --primary-foreground: rgba(23, 23, 23, 1);
+  --secondary: rgba(38, 38, 38, 1);
+  --secondary-foreground: rgba(250, 250, 250, 1);
+  --muted: rgba(38, 38, 38, 1);
+  --muted-foreground: rgba(65, 65, 65, 1);
+  --accent: rgba(38, 38, 38, 1);
+  --accent-foreground: rgba(250, 250, 250, 1);
+  --destructive: rgba(139, 62, 62, 1);
+  --destructive-foreground: rgba(250, 250, 250, 1);
+  --border: rgba(38, 38, 38, 1);
+  --input: rgba(38, 38, 38, 1);
+  --ring: rgba(212, 212, 212, 1);
+  --chart-1: rgba(57, 143, 255, 1);
+  --chart-2: rgba(41, 179, 137, 1);
+  --chart-3: rgba(191, 140, 44, 1);
+  --chart-4: rgba(191, 102, 255, 1);
+  --chart-5: rgba(255, 86, 168, 1);
+
+  --sidebar-background: rgba(60, 61, 64, 1);
+  --sidebar-foreground: rgba(245, 245, 245, 1);
+  --sidebar-primary: rgba(86, 193, 123, 1);
+  --sidebar-primary-foreground: rgba(255, 255, 255, 1);
+  --sidebar-accent: rgba(36, 36, 41, 1);
+  --sidebar-accent-foreground: rgba(245, 245, 245, 1);
+  --sidebar-border: rgba(36, 36, 41, 1);
+  --sidebar-ring: rgba(174, 227, 183, 1);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  border-color: var(--border);
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: var(--sidebar-background);
+  color: var(--sidebar-foreground);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--sidebar-border);
+}
+
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.popover {
+  background-color: var(--popover);
+  color: var(--popover-foreground);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+.muted {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+}
+
+.accent {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.destructive-btn {
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
